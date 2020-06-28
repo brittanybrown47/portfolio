@@ -30,6 +30,9 @@ a{
   font-size: 2.3em;
   color: #F99049;
 }
+#home-a{
+  color: #F99049;
+}
 .nav-li{
   font-weight: normal;
   font-family: roboto;
@@ -100,8 +103,16 @@ p{
 @media (min-width: 450px){
   
   nav{
-    padding: 5vh;
+    padding: 2vh;
   }
-  
+  #home{
+    font-size: 3vh;
+  }
+  .nav-li{
+    font-size: 1.5vw;
+  }
+  .nav-div{
+    font-size: 2vw;
+  }
   
 }
