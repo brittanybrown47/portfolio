@@ -1,0 +1,98 @@
+body{
+  font-family: roboto, Sans-Serif;
+  margin: 0;
+  padding: 0;
+}
+nav{
+  background-color: #060408;
+  margin:0 auto;
+  padding: .5em 0;
+  box-sizing: border-box;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.nav-ul{
+  list-style-type: none;
+  background-color: #060408;
+  margin: 0;
+  text-align: center;
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+#home{
+  font-family: yesteryear, cursive;
+  font-size: 2.3em;
+  color: #F99049;
+}
+.nav-li{
+  font-weight: normal;
+  font-family: roboto;
+  display: inline-block;
+  font-size: 1em;
+  padding: .1em;
+  color: white;
+  
+}
+.nav-div{
+  font-size: 1.5em;
+}
+#top-bg{
+  background: linear-gradient(35deg, #352D3D 50%, #060408 50%);
+  color: black;
+  margin:0;
+  padding: 0px 0;
+}
+.bg-gradient-h1{
+  background: -webkit-linear-gradient(45deg, white 50%, white 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  padding: 40px 0;
+}
+#h1{
+  margin: 0 auto;
+  font-family: yesteryear, cursive;
+  font-size: 4em;
+  text-align: center;
+  color: #F99049;
+  background: -webkit-linear-gradient(45deg, #F99049 50%, #F99049 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+h2{
+  margin: 0 auto;
+  text-align: center;
+  
+}
+h3{
+  font-size: .9em;
+  font-weight: normal;
+  text-align: center;
+}
+#bg-two{
+  background-color: #352D3D;
+  color: white;
+  padding: 40px 5vw;
+}
+#bg-two h2{
+  font-family: yesteryear, cursive;
+  text-align: left;
+  font-size: 3em;
+  color: #F99049;
+}
+#bg-two h3{
+  text-align: left;
+  font-weight: bold;
+  font-size: 1em;
+  //color: #F99049;
+}
+p{
+  margin: 0 auto;
+}
