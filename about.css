@@ -96,3 +96,12 @@ h3{
 p{
   margin: 0 auto;
 }
+
+@media (min-width: 450px){
+  
+  nav{
+    padding: 5vh;
+  }
+  
+  
+}
