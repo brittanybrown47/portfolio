@@ -4,11 +4,16 @@ body{
   padding: 0;
 }
 nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
   background-color: #060408;
   margin:0 auto;
-  padding: .5em 0;
+  padding: 2vh 0;
   box-sizing: border-box;
-  text-align: center;
   position: sticky;
   top: 0;
   left: 0;
@@ -36,11 +41,17 @@ a{
 .nav-li{
   font-weight: normal;
   font-family: roboto;
-  display: inline-block;
+  display: none;
   font-size: 1em;
   padding: .1em;
   color: white;
   
+}
+.bars-nav{
+  color: white;
+  flex-basis: 5vh;
+  font-size: 5vh;
+  padding: 1vh 2vh;
 }
 .nav-div{
   font-size: 1.5em;
@@ -100,19 +111,19 @@ p{
   margin: 0 auto;
 }
 
-@media (min-width: 450px){
+@media (min-width: 800px) and (orientation: landscape){
   
   nav{
     padding: 2vh;
   }
   #home{
-    font-size: 3vh;
+    font-size: vh;
   }
   .nav-li{
-    font-size: 1.5vw;
+    font-size: 10vh;
   }
   .nav-div{
-    font-size: 2vw;
+    font-size: 12vh;
   }
   
 }
