@@ -33,7 +33,9 @@ function animateNav(){
     function frame(){
       if (height == 11){
         clearInterval(bringUp);
-      }else{
+        navUl.style.display = "none";
+      }
+      else{
         navUl.style.display = "none";
         height--;
         nav.style.height = height + "vh";
