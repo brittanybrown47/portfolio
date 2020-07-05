@@ -3,40 +3,45 @@ window.onload = function(){
   
 const barsButton = document.getElementById("bars-navi");
 const nav = document.getElementById("nav-id");
+const navUl = document.querySelector(".nav-ul");
 let clicks = 0;
-
+let height = 11;
+console.log(navUl);
 
 function animateNav(){
-  if (clicks = 0){
-    for (i=0; i<100; i++){
-    nav.style.height = i + "vh";
-  }
+  if (clicks == 0){
+    height = 11;
     clicks = 1;
+    var dropDown = setInterval(frame, 10);
+    function frame(){
+      if (height == 100){
+        clearInterval(dropDown);
+        navUl.style.display = "flex";
+        navUl.style.flexDirection = "column";
+        navUl.style.alignItems = "center";
+        navUl.style.justifyContent = "center";
+      }else{
+        height++;
+        nav.style.height = height + "vh";
+      }
+    }
   }else{
-    for (i=100; i>10; i--){
-    nav.style.height = i + "vh";
-  }
+    height = 100;
     clicks = 0;
+    navUl.style.display = "none";
+    var bringUp = setInterval(frame, 10);
+    function frame(){
+      if (height == 11){
+        clearInterval(bringUp);
+      }else{
+        height--;
+        nav.style.height = height + "vh";
+      }
+    }
   }
 }
-console.log(nav);
-nav.addEventListener("click", animateNav);
 
-/*function animateNavUp(){
-  for (i=100; i>10; i--){
-    nav.style.height = i + "vh";
-  }
-  clicks = 0;
-}*/
-
-/*if (clicks == 0){
-  console.log(barsButton);
-  console.log(nav);
-  barsButton.addEventListener("click", animateNav);
-  console.log(clicks);
-}else{
-  barsButton.addEventListener("click", animateNavUp);
-}*/
+barsButton.addEventListener("click", animateNav);
 
 
 

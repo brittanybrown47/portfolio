@@ -24,7 +24,8 @@ nav{
   background-color: #060408;
   margin: 0;
   text-align: center;
-  
+  display: none;
+  width: 100%;
 }
 a{
   text-decoration: none;
@@ -32,7 +33,7 @@ a{
 }
 #home{
   font-family: yesteryear, cursive;
-  font-size: 2.3em;
+  font-size: 8vh;
   color: #F99049;
 }
 #home-a{
@@ -41,10 +42,11 @@ a{
 .nav-li{
   font-weight: normal;
   font-family: roboto;
-  display: none;
-  font-size: 1em;
-  padding: .1em;
+  font-size: 8vh;
+  padding: 2vh;
   color: white;
+  font-weight: bold;
+  height: 100%;
   
 }
 .bars-nav{
@@ -55,6 +57,7 @@ a{
 }
 .nav-div{
   font-size: 1.5em;
+  display: none;
 }
 #top-bg{
   background: linear-gradient(35deg, #352D3D 50%, #060408 50%);
