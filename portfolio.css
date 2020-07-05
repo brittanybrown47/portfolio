@@ -1,0 +1,37 @@
+#portfolio-section{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #352D3D;
+}
+#portfolio-section h2{
+  font-family: yesteryear, cursive;
+  text-align: left;
+  font-size: 3em;
+  color: #F99049;
+  padding-bottom: 3vh;
+  padding-top: 2vh;
+}
+.portfolio-frames{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: white;
+  padding: 5vh 7vw;
+  background-color: #060408;
+  border-radius: 30px;
+  margin: 50px 0;
+}
+.portfolio-frames h3{
+  font-size: 1.5em;
+}
+.portfolio-frames iframe{
+  width: 80vw;
+  height: 70vh;
+}

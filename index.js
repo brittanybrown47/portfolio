@@ -27,13 +27,14 @@ function animateNav(){
     }
   }else{
     height = 100;
+    nav.style.height = "100vh"
     clicks = 0;
-    navUl.style.display = "none";
     var bringUp = setInterval(frame, 10);
     function frame(){
       if (height == 11){
         clearInterval(bringUp);
       }else{
+        navUl.style.display = "none";
         height--;
         nav.style.height = height + "vh";
       }
