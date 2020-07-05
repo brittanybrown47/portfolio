@@ -35,3 +35,11 @@
   width: 80vw;
   height: 70vh;
 }
+.portfolio-frames img{
+  width: 80vw;
+  height: 70;
+}
+.portfolio-frames p{
+  width: 80vw;
+  padding-top: 20px;
+}
