@@ -113,20 +113,30 @@ h3{
 p{
   margin: 0 auto;
 }
-
-@media (min-width: 800px) and (orientation: landscape){
-  
-  nav{
-    padding: 2vh;
+#bg-two img{
+  width: 88vw;
+  height: auto;
+  border-radius: 30px;
+  border: solid #060408 1vw;
+}
+@media (min-width: 750px){
+  #bg-two-flex{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: space-evenly;
+    align-items: stretch;
   }
-  #home{
-    font-size: vh;
+  #bg-two h2{
+    text-align: center;
+    padding-bottom: 20px;
   }
-  .nav-li{
-    font-size: 10vh;
-  }
-  .nav-div{
-    font-size: 12vh;
+  #bg-two #bg-two-sections{
+    background-color: #060408;
+    border-radius: 30px;
+    width: 25vw;
+    padding: 2vw;
   }
   
 }
